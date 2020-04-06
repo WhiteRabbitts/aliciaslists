@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alicia's Lists</title>
+</head>
+<!--Images and title text-->
+<body>
+  <br>
+    <div class="row">
+        <div class="column">
+          <img id="jackson" src="images/jackson.jpg" alt="jackson" style="width:100%">
+        </div>
+        <div class="column">
+          <img id="milo" src="images/milo_360.jpg" alt="Milo" style="width:100%">
+        </div>
+      </div>
+<h1><b>Alicia's Lists</b></h1>
+
+<br>
+
+<!-- Shopping List -->
+<div id="List">
+    <label for="item"></label>
+    <input type="text" name="item" id="item">
+    <button id="add">Add Item</button>
+  </div>
+  <br>
+  <div class="newlist">
+    <button id="addnewlist">Add New List</button>
+  </div>
+  
+  <ul></ul>
+  
+  <script>
+    const list = document.querySelector('ul');
+    const input = document.querySelector('input');
+    const button = document.querySelector('button');
+
+    button.onclick = function() {
+      let myItem = input.value;
+      input.value = '';
+
+      const listItem = document.createElement('li');
+      const listText = document.createElement('span');
+      const listBtn = document.createElement('button');
+
+      listItem.appendChild(listText);
+      listText.textContent = myItem;
+      listItem.appendChild(listBtn);
+      listBtn.textContent = 'Delete';
+      list.appendChild(listItem);
+
+      listBtn.onclick = function(e) {
+        list.removeChild(listItem);
+      }
+
+      input.focus();
+    }
+  </script>
+</body>
+</html>

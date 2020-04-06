@@ -1,0 +1,93 @@
+h1, h2, label {
+    color: aqua;
+    text-align: center;
+    font-style: bold;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+
+body {
+    background-color: rgb(114, 14, 114);
+
+}
+
+.row {
+    display: flex;
+  }
+  
+.column {
+    flex: 50%;
+    padding: 5px;
+  }
+
+#milo, #jackson {
+    border-radius: 50%;
+    max-width:20%;
+    max-height:20%;
+    border:1px solid black;
+}
+
+#jackson {
+    margin-left: 80%;
+}
+
+img:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 1s ease-in-out 0s;
+}
+
+#List {
+    text-align: center;
+}
+
+#Results {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(255, 0, 64);
+    border-radius:3px;
+    margin-left: 5px;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Nunito', sans-serif;
+    color: aqua;
+    font-size: larger;
+
+
+
+}
+
+label {
+    color: aqua;
+}
+
+#add {
+    background: greenyellow;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 16px;
+
+}
+
+#addnewlist{
+    text-align: center;
+    font-style: bold;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(255, 0, 234);
+    border-radius: 16px;
+    font-style: bold;
+    position:relative;top:-43px; left: 180px;
+
+}
+
+.newlist {
+    text-align: center;
+}
