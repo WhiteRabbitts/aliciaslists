@@ -53,7 +53,7 @@ img:hover
 button {
     background-color: rgb(255, 0, 64);
     border-radius:3px;
-    margin-left: 5px;
+    
 }
 
 ul {
@@ -83,12 +83,11 @@ label {
     font-style: bold;
     font-family: 'Nunito', sans-serif;
     background-color: rgb(255, 0, 234);
-    border-radius: 16px;
     font-style: bold;
-    position:relative;top:-76px; 
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    float: left;
 
 }
 
-.newlist {
-    text-align: center;
-}
