@@ -43,6 +43,7 @@ img:hover
 
 #List {
     text-align: center;
+    padding-top: 10px;
 }
 
 #Results {
@@ -84,7 +85,7 @@ label {
     background-color: rgb(255, 0, 234);
     border-radius: 16px;
     font-style: bold;
-    position:relative;top:-43px; left: 180px;
+    position:relative;top:-76px; 
 
 }
 
